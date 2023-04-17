@@ -1,0 +1,338 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif; 
+}
+
+body{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+#menubar-container{
+    background-image: url(images/ME\ ON\ GREEN-NATIVE.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+    max-height: 100%;
+    padding: 0;
+    margin-bottom: 0px;
+    color:white;
+    text-align: center;
+}
+.faded-page{
+    background-color: rgba(0, 0, 0, 0.603);
+    max-width:100%;
+    height: 100vh;
+}
+.nav-container{
+    position: fixed;
+    display: flex;
+    margin: 0;
+    padding: 10px;
+}
+.myname{
+    margin-left: 198px;
+}
+.navbar{
+    position: relative;
+    left: 30%;
+    bottom: 25px;
+}
+.navbar a{
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;   
+    cursor: pointer;
+}
+.border-home {
+    border-bottom: 2px solid #e43c5d;
+}
+.navbar a:hover{
+    border-bottom: 2px solid red; 
+    cursor: pointer;  
+}
+#details-cont{
+    padding: 5px;
+    margin-top: 289px;
+   
+}
+.hello-sect{
+    border: 0px solid rgba(255, 255, 255, 0.359);
+    background-color: rgba(226, 214, 214, 0.132);
+    color: rgb(255, 255, 255);
+    width: 180px;
+    height:50px;
+    border-radius: 25px;
+    padding: 10px;
+    position: absolute;
+    top: 33%;
+    left: 45%;
+}
+.name-details{
+    padding: 5px;
+    font-size: 25px;
+}
+.boxes-resume {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+.resume {
+    color: white;
+    border: 1px solid;
+    border-radius: 25px;
+    /* background-color: #e43c5d; */
+    margin-left: 15px;
+    padding: 5px 18px;
+    text-align: center;
+    font-weight: 10px;
+    text-decoration: none;
+    
+}
+.resume:hover{
+    background-color:#e43c5d;
+    border-color:#e43c5d;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width:600px) {
+    .menubar-container{
+        width: 50%;
+        background-size: cover;
+    }
+    .myname{
+        visibility: none;
+        /* flex-direction: column;
+        margin-left: 0px; */
+    }
+    .navbar{
+        visibility: hidden;
+        display: inline-block;
+        position: relative;
+        left: 5px;
+    }
+    .hello-sect{
+        justify-content: center;
+        position: absolute;
+        left: 30%;
+        right: auto;
+    }
+}
+
+
+
+/* THE SECOND WEB-PAGE  */
+.about-1{
+    color: white;
+  border: 0px solid;
+  border-radius: 25px;
+  background-color: #e43c5d;
+  padding: 10px 15px;
+  text-decoration: none;
+  } */
+
+/* THIS CONTAINS THE 4-SKILL SETS WITH OVERLAY */
+/* THE FONT-AWESOM ICONS FOR THE 4 IMAGES */
+
+.fa-four {
+    font-size: 50px;
+}
+.four-skill{
+    position: relative;
+    /* width: 50%; */
+    height: 350px;
+    border: 1px solid;
+    /* padding: 50px; */
+    margin: 10px;
+
+}
+
+.overlay-4{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: .5s ease-in-out;
+    z-index: -1;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: #e43c5d;
+    color: white;
+}
+.four-skill:hover {
+    color: white;
+}
+.four-skill:hover .overlay-4{
+    height: 100%;
+    border: 1px solid;
+    color: white;
+}
+/* CALL TO ACTION SECTION */
+.img-cut{
+    background-image: url(images/team\ cutting\ paper.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    width: 100%;
+}
+.call-fade {
+    background-color: rgba(0, 0, 0, 0.515);
+    height: 300px;
+    width: 100%;
+}
+.call-btn {
+    border: 1px solid;
+    padding: 10px 25px;
+    letter-spacing: 2px;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.call-btn:hover{
+    background-color: #e43c5d;
+    transition: .4s ease;
+    border: 0px;
+}
+.call-text {
+    padding: 20px;
+}
+
+
+/* CHECK MY RECENT WORK SECTIONS  */
+.work-btn{
+   border: 0px solid;
+   color: #e43c5d;
+   padding: 5px 15px;
+   border-radius: 25px;
+   background-color:#FDEFF2;
+   text-decoration: none;
+   
+}
+.work-btn:hover {
+    background-color: #e43c5d;
+    color: white;
+}
+.work-skill {
+    display: inline-block;
+    margin: 10px;
+    border: 0px solid;
+    padding: 5px 15px;
+    border-radius: 25px;
+    background-color: #EDE9E9;
+}
+.work-skill:hover {
+    background-color: #e43c5d;
+    color: white;
+}
+.filter-active{
+    background-color: #e43c5d;
+    color: white;
+}
+/* ------------------------------------------- */
+/* THE NINE 3-GRID IMAGES UNDER RECENT WORKS */
+.img-block{
+   max-width: 100%;
+    height: auto;
+}
+.fa-eye{
+    position: absolute;
+    right: 15px;
+    top: 40px;
+}
+
+.nine-img{
+position: relative;
+/* width: 50%; */
+margin: 10px;
+
+}
+.text-icon{
+    padding: 10px;
+}
+
+.overlay-9{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: .5s ease-in-out;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: #e43c5d;
+    color: white;  
+}
+.nine-img:hover .overlay-9{
+    height: 30%;
+}
+
+/* CONTACT SECTION */
+.cont-us{
+    margin: 50px 30px;
+
+}
+.cont-1{
+    border: 0px solid;
+    padding: 5px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #e43c5d;
+    background-color: #EDE9E9;
+    margin-bottom: 15px;
+}
+.cont-1:hover {
+    background-color: #e43c5d;
+    color: white;
+}
+/* GOOGLE MAP- LOCATOR */
+.my-icon {
+    font-size: 15px;
+    position: absolute;
+    margin: 5px;
+    border: 1px solid;
+    background-color: #EDE9E9;
+    color: #e43c5d;
+    padding: 15px;
+    border-radius: 65px;
+}
+.my-icon:hover{
+    background-color: #e43c5d;
+    color: white;
+}
+.txt-box{
+    margin-left: 70px;
+}
+
+.address{
+}
+
+/* THE FOOTER  */
+.social-links{
+    /* margin-left: 400px; */
+}
+.lst-icon{
+    font-size: 20px;
+    color: #e43c5d;
+    margin: 10px;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 25px;
+}
+.lst-icon:hover{
+    background-color: #e43c5d;
+    color: white;
+}
+footer{
+    border: 0px solid;
+    background-color: #EDE9E9;
+}

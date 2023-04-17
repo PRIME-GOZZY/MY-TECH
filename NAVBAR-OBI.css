@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif; 
+}
+
+body{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#menubar-container{
+    background-image: url(../images/Laptop\ background.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+    max-height: 100%;
+    padding: 0;
+    margin-bottom: 0px;
+    color:white;
+    text-align: center;
+}
+.faded-page{
+    background-color: rgba(0, 0, 0, 0.603);
+    max-width:100%;
+    height: 100vh;
+}
+.nav-container{
+    position: fixed;
+    display: flex;
+    margin: 0;
+    padding: 10px;
+}
+.myname{
+    margin-left: 198px;
+}
+.navbar{
+    position: relative;
+    left: 30%;
+    bottom: 25px;
+}
+.navbar a{
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;   
+    cursor: pointer;
+}
+.border-home {
+    border-bottom: 2px solid #e43c5d;
+}
+.navbar a:hover{
+    border-bottom: 2px solid red; 
+    cursor: pointer;  
+}
+#details-cont{
+    padding: 5px;
+    margin-top: 289px;
+   
+}
+.hello-sect{
+    border: 0px solid rgba(255, 255, 255, 0.359);
+    background-color: rgba(226, 214, 214, 0.132);
+    color: rgb(255, 255, 255);
+    width: 180px;
+    height:50px;
+    border-radius: 25px;
+    padding: 10px;
+    position: absolute;
+    top: 33%;
+    left: 45%;
+}
+.name-details{
+    padding: 5px;
+    font-size: 25px;
+}
+.boxes-resume {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+.resume {
+    color: white;
+    border: 1px solid;
+    border-radius: 25px;
+    /* background-color: #e43c5d; */
+    margin-left: 15px;
+    padding: 5px 18px;
+    text-align: center;
+    font-weight: 10px;
+    text-decoration: none;
+    
+}
+.resume:hover{
+    background-color:#e43c5d;
+    border-color:#e43c5d;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width:600px) {
+    .menubar-container{
+        width: 50%;
+        background-size: cover;
+    }
+    .myname{
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .navbar{
+        visibility: hidden;
+        display: inline-block;
+        position: relative;
+        left: 5px;
+    }
+    .hello-sect{
+        justify-content: center;
+        position: absolute;
+        left: 30%;
+        right: auto;
+    }
+}
